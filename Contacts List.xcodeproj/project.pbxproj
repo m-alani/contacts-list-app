@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		E022B752218E525000123C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B751218E525000123C1D /* AppDelegate.swift */; };
-		E022B754218E525000123C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B753218E525000123C1D /* ViewController.swift */; };
+		E022B754218E525000123C1D /* MainContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B753218E525000123C1D /* MainContactsViewController.swift */; };
 		E022B757218E525000123C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E022B755218E525000123C1D /* Main.storyboard */; };
 		E022B759218E525200123C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E022B758218E525200123C1D /* Assets.xcassets */; };
 		E022B75C218E525200123C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E022B75A218E525200123C1D /* LaunchScreen.storyboard */; };
+		E022B765218E55B900123C1D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B764218E55B900123C1D /* Config.swift */; };
+		E022B767218E566B00123C1D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B766218E566B00123C1D /* Models.swift */; };
+		E022B772218E5AB900123C1D /* Mali-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E022B76E218E5AB900123C1D /* Mali-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E022B74E218E525000123C1D /* Contacts List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E022B751218E525000123C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E022B753218E525000123C1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E022B753218E525000123C1D /* MainContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsViewController.swift; sourceTree = "<group>"; };
 		E022B756218E525000123C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E022B758218E525200123C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E022B75B218E525200123C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E022B75D218E525200123C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E022B763218E52FB00123C1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E022B764218E55B900123C1D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E022B766218E566B00123C1D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E022B76E218E5AB900123C1D /* Mali-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,14 +62,41 @@
 		E022B750218E525000123C1D /* Contacts List */ = {
 			isa = PBXGroup;
 			children = (
-				E022B751218E525000123C1D /* AppDelegate.swift */,
-				E022B753218E525000123C1D /* ViewController.swift */,
-				E022B755218E525000123C1D /* Main.storyboard */,
-				E022B758218E525200123C1D /* Assets.xcassets */,
-				E022B75A218E525200123C1D /* LaunchScreen.storyboard */,
 				E022B75D218E525200123C1D /* Info.plist */,
+				E022B76A218E583800123C1D /* Source */,
+				E022B769218E581C00123C1D /* Storyboards */,
+				E022B768218E580800123C1D /* Resources */,
 			);
 			path = "Contacts List";
+			sourceTree = "<group>";
+		};
+		E022B768218E580800123C1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E022B76E218E5AB900123C1D /* Mali-Regular.ttf */,
+				E022B758218E525200123C1D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E022B769218E581C00123C1D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E022B755218E525000123C1D /* Main.storyboard */,
+				E022B75A218E525200123C1D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E022B76A218E583800123C1D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E022B751218E525000123C1D /* AppDelegate.swift */,
+				E022B753218E525000123C1D /* MainContactsViewController.swift */,
+				E022B764218E55B900123C1D /* Config.swift */,
+				E022B766218E566B00123C1D /* Models.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +160,7 @@
 				E022B75C218E525200123C1D /* LaunchScreen.storyboard in Resources */,
 				E022B759218E525200123C1D /* Assets.xcassets in Resources */,
 				E022B757218E525000123C1D /* Main.storyboard in Resources */,
+				E022B772218E5AB900123C1D /* Mali-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E022B754218E525000123C1D /* ViewController.swift in Sources */,
+				E022B765218E55B900123C1D /* Config.swift in Sources */,
+				E022B754218E525000123C1D /* MainContactsViewController.swift in Sources */,
 				E022B752218E525000123C1D /* AppDelegate.swift in Sources */,
+				E022B767218E566B00123C1D /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
