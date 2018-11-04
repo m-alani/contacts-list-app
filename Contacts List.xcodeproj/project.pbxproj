@@ -16,6 +16,7 @@
 		E022B767218E566B00123C1D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B766218E566B00123C1D /* Models.swift */; };
 		E022B772218E5AB900123C1D /* Mali-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E022B76E218E5AB900123C1D /* Mali-Regular.ttf */; };
 		E080D1B2218E71610005CAB6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080D1B1218E71610005CAB6 /* Network.swift */; };
+		E080D1B4218E75E90005CAB6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080D1B3218E75E90005CAB6 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E022B766218E566B00123C1D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E022B76E218E5AB900123C1D /* Mali-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mali-Regular.ttf"; sourceTree = "<group>"; };
 		E080D1B1218E71610005CAB6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E080D1B3218E75E90005CAB6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				E022B751218E525000123C1D /* AppDelegate.swift */,
 				E022B753218E525000123C1D /* MainContactsViewController.swift */,
+				E080D1B3218E75E90005CAB6 /* UserTableViewCell.swift */,
 				E022B764218E55B900123C1D /* Config.swift */,
 				E022B766218E566B00123C1D /* Models.swift */,
 				E080D1B1218E71610005CAB6 /* Network.swift */,
@@ -178,6 +181,7 @@
 				E022B765218E55B900123C1D /* Config.swift in Sources */,
 				E022B754218E525000123C1D /* MainContactsViewController.swift in Sources */,
 				E022B752218E525000123C1D /* AppDelegate.swift in Sources */,
+				E080D1B4218E75E90005CAB6 /* UserTableViewCell.swift in Sources */,
 				E022B767218E566B00123C1D /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

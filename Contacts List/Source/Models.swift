@@ -36,6 +36,6 @@ struct User {
     let name: String
     let email: String
     let phone: String
-    let thumbnail: UIImage
-    let picture: UIImage
+    let thumbnail: UIImage?
+    let picture: UIImage?
 }
