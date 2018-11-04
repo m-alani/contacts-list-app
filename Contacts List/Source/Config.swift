@@ -11,9 +11,16 @@
 import UIKit
 
 // MARK: Configuration
-let baseApiUrl: String = "https://randomuser.me/api/"
+let API_URL = "https://randomuser.me/api/"
+let NUMBER_PER_REQUEST = 20
+let USERS_COUNTRY = "ca"
+let REQUEST_FIELDS = ["name", "email", "phone", "id", "picture"]
 
 // MARK: Constants
+// Colors
 let darkColor = UIColor(red: 44/255, green: 46/255, blue: 49/255, alpha: 1)
 let lightColor: UIColor = .white
 let greenColor = UIColor(red: 131/255, green: 186/255, blue: 67/255, alpha: 1)
+
+// TableView
+let UserCellIdentifier = "UserCell"
