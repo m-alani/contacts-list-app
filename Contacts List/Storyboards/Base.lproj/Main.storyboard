@@ -38,20 +38,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YSD-UJ-2Ft">
-                                                    <rect key="frame" x="110" y="19" width="34" height="21"/>
+                                                    <rect key="frame" x="15" y="18" width="39.5" height="23.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Mali-Regular" family="Mali" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NSr-3S-6ar">
-                                                    <rect key="frame" x="110" y="43" width="44" height="14.5"/>
+                                                    <rect key="frame" x="15" y="44.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="user_placeholder" id="06g-8C-VDV" userLabel="User Image">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="06g-8C-VDV" userLabel="User Image">
                                                     <rect key="frame" x="15" y="0.0" width="80" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
@@ -67,7 +67,7 @@
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xKS-O0-jcL" secondAttribute="trailing" id="2Ec-Yh-28W"/>
                             <constraint firstItem="xKS-O0-jcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4H1-dT-0w5"/>
@@ -107,7 +107,4 @@
             <point key="canvasLocation" x="312.80000000000001" y="792.95352323838085"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="user_placeholder" width="300" height="300"/>
-    </resources>
 </document>

@@ -23,16 +23,32 @@ class MainContactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        users.append(User(name: "John Doe", email: "john@doe.com", phone: "+1-647-123-456", thumbnail: UIImage(named: "user_placeholder"), picture: UIImage(named: "user_placeholder")))
         tableView.delegate = self
         tableView.dataSource = self
         
-        view.backgroundColor = lightColor
-        
+        fetchUsers()
     }
 
     // MARK: Other functions
     
+    func fetchUsers() {
+        let completionHandler: FetchUsersCompletionHandler = { [weak self] (fetchedUsers) in
+            guard let strongSelf = self else { return }
+            DispatchQueue.main.async {
+                strongSelf.activityIndicator.stopAnimating()
+                strongSelf.activityIndicator.isHidden = true
+                strongSelf.tableView.isHidden = false
+                
+                strongSelf.users = fetchedUsers
+                strongSelf.tableView.reloadData()
+            }
+        }
+        
+        tableView.isHidden = true
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        Network.fetchUsers(completionHandler)
+    }
 }
 
 // MARK: TableView Data Source Delegate Extension

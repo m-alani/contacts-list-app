@@ -12,22 +12,34 @@ import UIKit
 
 // MARK: Netowrk models
 
-struct PayloadName: Codable {
+struct ApiName: Codable {
     let first: String
     let last: String
 }
 
-struct PayloadPicture: Codable {
+struct ApiPicture: Codable {
     let large: String
     let medium: String
     let thumbnail: String
 }
 
-struct PayloadUser: Codable {
-    let name: PayloadName
+struct ApiUser: Codable {
+    let name: ApiName
     let email: String
     let phone: String
-    let picture: PayloadPicture
+    let picture: ApiPicture
+}
+
+struct ApiResponseInfo: Codable {
+    let seed: String
+    let results: Int
+    let page: Int
+    let version: String
+}
+
+struct ApiResponse: Codable {
+    let results: [ApiUser]
+    let info: ApiResponseInfo
 }
 
 // MARK: App models
@@ -36,6 +48,22 @@ struct User {
     let name: String
     let email: String
     let phone: String
-    let thumbnail: UIImage?
-    let picture: UIImage?
+    let thumbnailUrl: String
+    let pictureUrl: String
+    
+    init(name: String, email: String, phone: String, thumbnailUrl: String, pictureUrl: String) {
+        self.name = name
+        self.email = email
+        self.phone = phone
+        self.thumbnailUrl = thumbnailUrl
+        self.pictureUrl = pictureUrl
+    }
+    
+    init(fromNetworkUser user: ApiUser) {
+        self.name = "\(user.name.first) \(user.name.last)"
+        self.email = user.email
+        self.phone = user.phone
+        self.thumbnailUrl = user.picture.thumbnail
+        self.pictureUrl = user.picture.large
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A578E32190BCBA00F4A137 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A578E22190BCBA00F4A137 /* UIImageView.swift */; };
 		E022B752218E525000123C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B751218E525000123C1D /* AppDelegate.swift */; };
 		E022B754218E525000123C1D /* MainContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022B753218E525000123C1D /* MainContactsViewController.swift */; };
 		E022B757218E525000123C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E022B755218E525000123C1D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9A578E22190BCBA00F4A137 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		E022B74E218E525000123C1D /* Contacts List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E022B751218E525000123C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E022B753218E525000123C1D /* MainContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				E022B764218E55B900123C1D /* Config.swift */,
 				E022B766218E566B00123C1D /* Models.swift */,
 				E080D1B1218E71610005CAB6 /* Network.swift */,
+				C9A578E22190BCBA00F4A137 /* UIImageView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				E080D1B2218E71610005CAB6 /* Network.swift in Sources */,
 				E022B765218E55B900123C1D /* Config.swift in Sources */,
+				C9A578E32190BCBA00F4A137 /* UIImageView.swift in Sources */,
 				E022B754218E525000123C1D /* MainContactsViewController.swift in Sources */,
 				E022B752218E525000123C1D /* AppDelegate.swift in Sources */,
 				E080D1B4218E75E90005CAB6 /* UserTableViewCell.swift in Sources */,
