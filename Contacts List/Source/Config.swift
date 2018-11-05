@@ -25,7 +25,11 @@ let greenColor = UIColor(red: 131/255, green: 186/255, blue: 67/255, alpha: 1)
 // TableView
 let UserCellIdentifier = "UserCell"
 
+// Segues
+let ShowUserDetailsSegue = "showUserDetailsScreen"
+
 // MARK: Config-dependant variables
+// randomuser.me API Url (as a string)
 var apiUrlString: String {
     return API_BASE_URL +
         "inc=\(REQUEST_FIELDS.joined(separator: ","))" +

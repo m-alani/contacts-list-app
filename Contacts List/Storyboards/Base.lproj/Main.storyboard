@@ -82,11 +82,64 @@
                     <connections>
                         <outlet property="activityIndicator" destination="JZ6-LI-Fok" id="fhl-io-MFf"/>
                         <outlet property="tableView" destination="xKS-O0-jcL" id="WHk-bB-fH6"/>
+                        <segue destination="eKv-SW-eQZ" kind="show" identifier="showUserDetailsScreen" id="E2B-4z-Fci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1190" y="793"/>
+        </scene>
+        <!--User Details View Controller-->
+        <scene sceneID="MUP-Rd-mmT">
+            <objects>
+                <viewController id="eKv-SW-eQZ" customClass="UserDetailsViewController" customModule="Contacts_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UEM-8b-a83">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u66-YD-B75">
+                                <rect key="frame" x="137.5" y="84" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="FMN-pb-xL6"/>
+                                    <constraint firstAttribute="width" constant="100" id="sfL-my-ixl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-tZ-ego">
+                                <rect key="frame" x="163.5" y="204" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PI-po-ApM">
+                                <rect key="frame" x="163" y="286" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd5-aG-wpF">
+                                <rect key="frame" x="167" y="245" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u66-YD-B75" firstAttribute="top" secondItem="xJU-ux-RdL" secondAttribute="top" constant="20" id="0ui-6l-pRe"/>
+                            <constraint firstItem="2PI-po-ApM" firstAttribute="top" secondItem="wd5-aG-wpF" secondAttribute="bottom" constant="20" id="1lb-sL-bvz"/>
+                            <constraint firstItem="Rv4-tZ-ego" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="Dbo-m5-MRP"/>
+                            <constraint firstItem="wd5-aG-wpF" firstAttribute="top" secondItem="Rv4-tZ-ego" secondAttribute="bottom" constant="20" id="GF2-Nm-Cdp"/>
+                            <constraint firstItem="u66-YD-B75" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="Unf-v0-WT9"/>
+                            <constraint firstItem="Rv4-tZ-ego" firstAttribute="top" secondItem="u66-YD-B75" secondAttribute="bottom" constant="20" id="cVo-sx-91B"/>
+                            <constraint firstItem="2PI-po-ApM" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="cbh-Fy-gbO"/>
+                            <constraint firstItem="wd5-aG-wpF" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="i5G-Tk-Wf5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xJU-ux-RdL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THz-fh-F8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="793"/>
         </scene>
         <!--Contacts List-->
         <scene sceneID="dSr-kW-ZOF">

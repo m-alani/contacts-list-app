@@ -66,5 +66,7 @@ extension MainContactsViewController: UITableViewDataSource {
 
 // MARK: TableView Delegate Extension
 extension MainContactsViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: ShowUserDetailsSegue, sender: nil)
+    }
 }
