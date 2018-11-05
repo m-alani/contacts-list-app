@@ -18,10 +18,10 @@ class UserTableViewCell: UITableViewCell {
     // Properties
     var user: User? {
         didSet {
-            guard let unwrapperUser = user else { return }
-            title.text = unwrapperUser.name
-            subTitle.text = unwrapperUser.email
-            userThumbnail.downloadImageFrom(url: unwrapperUser.thumbnailUrl, forCell: self)
+            guard let unwrappedUser = user else { return }
+            title.text = unwrappedUser.name
+            subTitle.text = unwrappedUser.email
+            userThumbnail.downloadImageFrom(url: unwrappedUser.thumbnailUrl, forCell: self)
         }
     }
     
