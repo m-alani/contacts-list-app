@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: Configuration
 let API_BASE_URL = "https://randomuser.me/api/?"
-let REQUEST_FIELDS = ["name", "email", "phone", "id", "picture"]
+let REQUEST_FIELDS = ["name", "email", "phone", "id", "picture", "dob"]
 let NUMBER_PER_REQUEST = 20
 let USERS_NAT = "ca"
 

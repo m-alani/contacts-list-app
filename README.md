@@ -3,6 +3,11 @@ This is a sample app used to introduce individuals to the basics of iOS App Deve
   
 Use the `master` branch for the in-person workshop. Alternatevily, you should checkout the `completed` branch if you want to see the completed project.
 -----
+### Screenshots
+![Main Screen](Screenshots/main_screen.jpg "Main Screen")
+![User Details Screen](Screenshots/details_screen.jpg "User Details Screen")
+
+-----
 ### Workshop Topics
 - Tooling
 - The App Life Cycle

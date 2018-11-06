@@ -110,25 +110,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PI-po-ApM">
-                                <rect key="frame" x="163" y="376.5" width="49" height="21"/>
+                                <rect key="frame" x="163" y="417.5" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd5-aG-wpF">
-                                <rect key="frame" x="167" y="335.5" width="41" height="21"/>
+                                <rect key="frame" x="167" y="376.5" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-qI-QBb">
-                                <rect key="frame" x="155" y="417.5" width="65" height="33"/>
+                                <rect key="frame" x="155" y="458.5" width="65" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Go Back"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="eKv-SW-eQZ" eventType="touchUpInside" id="V6B-MQ-5PZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlT-A4-o53">
+                                <rect key="frame" x="172.5" y="335.5" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -137,17 +143,20 @@
                             <constraint firstItem="2PI-po-ApM" firstAttribute="top" secondItem="wd5-aG-wpF" secondAttribute="bottom" constant="20" id="1lb-sL-bvz"/>
                             <constraint firstItem="tfw-qI-QBb" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="3Cj-1V-Xw1"/>
                             <constraint firstItem="Rv4-tZ-ego" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="Dbo-m5-MRP"/>
-                            <constraint firstItem="wd5-aG-wpF" firstAttribute="top" secondItem="Rv4-tZ-ego" secondAttribute="bottom" constant="20" id="GF2-Nm-Cdp"/>
+                            <constraint firstItem="wd5-aG-wpF" firstAttribute="top" secondItem="zlT-A4-o53" secondAttribute="bottom" constant="20" id="GF2-Nm-Cdp"/>
                             <constraint firstItem="u66-YD-B75" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="Unf-v0-WT9"/>
                             <constraint firstItem="Rv4-tZ-ego" firstAttribute="top" secondItem="u66-YD-B75" secondAttribute="bottom" constant="20" id="cVo-sx-91B"/>
                             <constraint firstItem="2PI-po-ApM" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="cbh-Fy-gbO"/>
                             <constraint firstItem="u66-YD-B75" firstAttribute="width" secondItem="xJU-ux-RdL" secondAttribute="width" multiplier="0.5" id="fYk-Ad-VJY"/>
                             <constraint firstItem="wd5-aG-wpF" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="i5G-Tk-Wf5"/>
+                            <constraint firstItem="zlT-A4-o53" firstAttribute="centerX" secondItem="UEM-8b-a83" secondAttribute="centerX" id="lQn-F0-OTJ"/>
+                            <constraint firstItem="zlT-A4-o53" firstAttribute="top" secondItem="Rv4-tZ-ego" secondAttribute="bottom" constant="20" id="q3z-Pr-TJJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xJU-ux-RdL"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="tfw-qI-QBb" id="TqP-6z-PbJ"/>
+                        <outlet property="userAgeLabel" destination="zlT-A4-o53" id="AbJ-Sg-edx"/>
                         <outlet property="userEmailLabel" destination="wd5-aG-wpF" id="Aec-a7-DhG"/>
                         <outlet property="userImageView" destination="u66-YD-B75" id="xDg-ey-oIa"/>
                         <outlet property="userNameLabel" destination="Rv4-tZ-ego" id="3Ef-h2-7px"/>

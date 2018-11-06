@@ -13,6 +13,7 @@ class UserDetailsViewController: UIViewController {
     // Outlets
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userAgeLabel: UILabel!
     @IBOutlet weak var userEmailLabel: UILabel!
     @IBOutlet weak var userPhoneLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
@@ -42,6 +43,7 @@ class UserDetailsViewController: UIViewController {
     // Other Functions
     func setColorsUp() {
         userNameLabel.textColor = darkColor
+        userAgeLabel.textColor = greyColor
         userEmailLabel.textColor = greyColor
         userPhoneLabel.textColor = greyColor
         navigationItem.leftBarButtonItem?.tintColor = greenColor
@@ -51,6 +53,7 @@ class UserDetailsViewController: UIViewController {
     func setTextUp() {
         guard let unwrappedUser = user else { return }
         userNameLabel.text = unwrappedUser.name
+        userAgeLabel.text = "\(unwrappedUser.age) years old"
         userEmailLabel.text = unwrappedUser.email
         userPhoneLabel.text = unwrappedUser.phone
     }
