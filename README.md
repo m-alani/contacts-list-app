@@ -10,7 +10,7 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 
 -----
 ### Workshop Topics
-- Tooling
+- Tooling (XCode, CocoaPods)
 - The App Life Cycle
   - `UIApplicationMain`
   - App States
@@ -22,6 +22,7 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 -----
 ### Resources
 - [Apple Developer Documentation](https://developer.apple.com/documentation/)
+- [Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 - [Apple XCode Help & Guides](https://help.apple.com/xcode/mac/current/)
 - [Useful Shortcut for XCode 10](https://github.com/roblack/xCodeShortcuts)
 - [The iOS App Lifecycle](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html)
