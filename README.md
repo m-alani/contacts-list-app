@@ -1,12 +1,7 @@
 #  Contacts List
 This is a sample app used to introduce individuals to the basics of iOS App Development using Swift.
-  
-Use the `master` branch for the in-person workshop. Alternatevily, you should checkout the `completed` branch if you want to see the completed project.
 
------
-### Screenshots
-![Main Screen](Screenshots/main_screen.jpg "Main Screen")
-![User Details Screen](Screenshots/details_screen.jpg "User Details Screen")
+Use the `master` branch for the in-person workshop. Alternatevily, you should checkout the `completed` branch if you want to see the completed project.
 
 -----
 ### Workshop Topics
@@ -18,7 +13,7 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 - Interface Builder & View Controllers
 - Parsing `JSON` & API calls using `URLSession` Overview
 - Concurrency with `Grand Central Dispatch` Overview (_time permitting_) 
-  
+
 -----
 ### Resources
 - [Random User Web API](https://randomuser.me/)
@@ -33,6 +28,11 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 - [A Guided Tour of Swift](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
 - Commonly used Design Patterns in iOS ([part1](https://www.raywenderlich.com/477-design-patterns-on-ios-using-swift-part-1-2), [part2](https://www.raywenderlich.com/476-design-patterns-on-ios-using-swift-part-2-2))
 - [Udacity - Intro to iOS App development with Swift](https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585)
+
+-----
+### Screenshots
+![Main Screen](Screenshots/main_screen.jpg "Main Screen")
+![User Details Screen](Screenshots/details_screen.jpg "User Details Screen")
 
 -----
 Marwan Alani - 2019 - [marwan@alani.ca](mailto:marwan@alani.ca), [Twitter](https://twitter.com/marwanalany), [LinkedIn](https://www.linkedin.com/in/marwanalani/), [Website](https://alani.ca)  
