@@ -15,6 +15,7 @@ class UserDetailsViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userEmailLabel: UILabel!
     @IBOutlet weak var userPhoneLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     // Properties
     var user: User?
@@ -41,8 +42,10 @@ class UserDetailsViewController: UIViewController {
     // Other Functions
     func setColorsUp() {
         userNameLabel.textColor = darkColor
-        userEmailLabel.textColor = greenColor
-        userPhoneLabel.textColor = greenColor
+        userEmailLabel.textColor = greyColor
+        userPhoneLabel.textColor = greyColor
+        navigationItem.leftBarButtonItem?.tintColor = greenColor
+        backButton.tintColor = greenColor
     }
     
     func setTextUp() {
@@ -51,4 +54,9 @@ class UserDetailsViewController: UIViewController {
         userEmailLabel.text = unwrappedUser.email
         userPhoneLabel.text = unwrappedUser.phone
     }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

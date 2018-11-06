@@ -19,8 +19,9 @@ let USERS_NAT = "ca"
 // MARK: Constants
 // Colors
 let darkColor = UIColor(red: 44/255, green: 46/255, blue: 49/255, alpha: 1)
-let lightColor: UIColor = .white
 let greenColor = UIColor(red: 131/255, green: 186/255, blue: 67/255, alpha: 1)
+let lightColor: UIColor = .white
+let greyColor: UIColor = .lightGray
 
 // TableView
 let UserCellIdentifier = "UserCell"

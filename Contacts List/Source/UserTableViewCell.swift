@@ -24,10 +24,4 @@ class UserTableViewCell: UITableViewCell {
             userThumbnail.downloadImageFrom(url: unwrappedUser.thumbnailUrl, forCell: self)
         }
     }
-    
-    // Lifecycle Functions
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        subTitle.textColor = greenColor
-    }
 }
