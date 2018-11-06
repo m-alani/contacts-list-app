@@ -49,14 +49,6 @@ class MainContactsViewController: UIViewController {
         activityIndicator.startAnimating()
         Network.fetchUsers(completionHandler)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let userDetailsViewController = segue.destination as? UserDetailsViewController,
-            let selectedUserIndex = tableView.indexPathForSelectedRow?.row
-            {
-            userDetailsViewController.user = users[selectedUserIndex]
-        }
-    }
 }
 
 // MARK: TableView Data Source Delegate Extension
@@ -75,6 +67,6 @@ extension MainContactsViewController: UITableViewDataSource {
 // MARK: TableView Delegate Extension
 extension MainContactsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: ShowUserDetailsSegue, sender: nil)
+
     }
 }

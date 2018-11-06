@@ -16,7 +16,7 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
   - App States
   - The App Delegate
 - Interface Builder & View Controllers
-- Parsing `JSON` & API calls using `URLSession` Overview
+- Parsing `JSON` & Network API calls using `URLSession` Overview
 - Concurrency with `Grand Central Dispatch` Overview (_time permitting_) 
   
 -----

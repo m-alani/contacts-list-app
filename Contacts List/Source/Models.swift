@@ -23,14 +23,9 @@ struct ApiPicture: Codable {
     let thumbnail: String
 }
 
-struct ApiDob: Codable {
-    let age: Int
-}
-
 struct ApiUser: Codable {
     let name: ApiName
     let email: String
-    let dob: ApiDob
     let phone: String
     let picture: ApiPicture
 }
@@ -52,15 +47,13 @@ struct ApiResponse: Codable {
 struct User {
     let name: String
     let email: String
-    let age: Int
     let phone: String
     let thumbnailUrl: String
     let pictureUrl: String
     
-    init(name: String, email: String, phone: String, age: Int, thumbnailUrl: String, pictureUrl: String) {
+    init(name: String, email: String, phone: String, thumbnailUrl: String, pictureUrl: String) {
         self.name = name
         self.email = email
-        self.age = age
         self.phone = phone
         self.thumbnailUrl = thumbnailUrl
         self.pictureUrl = pictureUrl
@@ -69,7 +62,6 @@ struct User {
     init(fromNetworkUser user: ApiUser) {
         self.name = "\(user.name.first) \(user.name.last)"
         self.email = user.email
-        self.age = user.dob.age
         self.phone = user.phone
         self.thumbnailUrl = user.picture.thumbnail
         self.pictureUrl = user.picture.large
