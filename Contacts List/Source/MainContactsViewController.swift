@@ -54,19 +54,15 @@ class MainContactsViewController: UIViewController {
 // MARK: TableView Data Source Delegate Extension
 extension MainContactsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let userCell = tableView.dequeueReusableCell(withIdentifier: UserCellIdentifier) as? UserTableViewCell else { return UITableViewCell() }
-        userCell.user = users[indexPath.row]
-        return userCell
+        return UITableViewCell()
     }
 }
 
 // MARK: TableView Delegate Extension
 extension MainContactsViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-    }
 }
