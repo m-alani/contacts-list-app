@@ -17,7 +17,7 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
   - The App Delegate
 - Interface Builder & View Controllers
 - Parsing `JSON` & API calls using `URLSession` Overview
-- Concurrency with `Grand Central Dispatch` (_time permitting_) 
+- Concurrency with `Grand Central Dispatch` Overview (_time permitting_) 
   
 -----
 ### Resources
@@ -31,5 +31,5 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 - [Udacity - Intro to iOS App development with Swift](https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585)
 
 -----
-Marwan Alani - 2019 - [marwan@alani.ca](mailto:marwan@alani.ca), [Twitter](https://twitter.com/marwanalany), [LinkedIn](https://www.linkedin.com/in/marwanalani/), [Website](https://alani.ca)
+Marwan Alani - 2019 - [marwan@alani.ca](mailto:marwan@alani.ca), [Twitter](https://twitter.com/marwanalany), [LinkedIn](https://www.linkedin.com/in/marwanalani/), [Website](https://alani.ca)  
 Written for a CSHUB workshop hosted @ York University (Toronto, Canada)
