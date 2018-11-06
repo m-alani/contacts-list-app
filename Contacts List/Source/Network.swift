@@ -24,7 +24,8 @@ struct Network {
                 error == nil
                 else {
                     completionHandler([User]())
-                    return }
+                    return
+                }
             
             // Decode retrived data
             let apiResponse = try? JSONDecoder().decode(ApiResponse.self, from: unwrappedData)
