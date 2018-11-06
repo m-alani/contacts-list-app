@@ -21,7 +21,6 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
   
 -----
 ### Resources
-- [A Guided Tour of Swift](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
 - [Random User Web API](https://randomuser.me/)
 - [Apple Developer Documentation](https://developer.apple.com/documentation/)
 - [Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
@@ -31,6 +30,8 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
 - [Ultimate Guide to JSON Parsing with Swift 4](https://benscheirman.com/2017/06/swift-json/)
 - [URLSession Tutorial](https://www.raywenderlich.com/567-urlsession-tutorial-getting-started)
 - Grand Central Dispatch Tutorial ([part1](https://www.raywenderlich.com/5370-grand-central-dispatch-tutorial-for-swift-4-part-1-2), [part2](https://www.raywenderlich.com/5371-grand-central-dispatch-tutorial-for-swift-4-part-2-2))
+- [A Guided Tour of Swift](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
+- Commonly used Design Patterns in iOS ([part1](https://www.raywenderlich.com/477-design-patterns-on-ios-using-swift-part-1-2), [part2](https://www.raywenderlich.com/476-design-patterns-on-ios-using-swift-part-2-2))
 - [Udacity - Intro to iOS App development with Swift](https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585)
 
 -----
