@@ -21,6 +21,8 @@ Use the `master` branch for the in-person workshop. Alternatevily, you should ch
   
 -----
 ### Resources
+- [A Guided Tour of Swift](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)
+- [Random User Web API](https://randomuser.me/)
 - [Apple Developer Documentation](https://developer.apple.com/documentation/)
 - [Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 - [Apple XCode Help & Guides](https://help.apple.com/xcode/mac/current/)
