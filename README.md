@@ -1,4 +1,4 @@
-#  Contacts List
+#  Contacts List (Intro to iOS Development using Swift)
 This is a sample app used to introduce individuals to the basics of iOS App Development using Swift.
 
 Use the `master` branch for the in-person workshop. Alternatevily, you should checkout the `completed` branch if you want to see the completed project.
